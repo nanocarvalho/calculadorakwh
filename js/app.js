@@ -1,7 +1,7 @@
 
 
 function calculaPreco() {
-    let consumoW = document.getElementById("consumoW").value
+    let consumoW = Number(document.getElementById("consumoW").value)
     let horas = Number(document.getElementById("horas").value)
     let diasUser = Number(document.getElementById("dias").value)
     let preco = Number(document.getElementById("preco").value)

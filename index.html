@@ -11,20 +11,20 @@
 </head>
 <body>
     <h1>Calculadora de Kwh</h1>
-    <p class="subtitle">Calculo baseado em média</p>
+    <p class="subtitle">Calculo baseado em média. Por gentileza utilize apenas números!</p>
 
     <!-- Inputs do usuario -->
     <p>Potência do aparelho (Watts):</p>
-    <input type="number" name="consumo" id="consumoW" placeholder="EX: 20W">
-
+    <input type="number" name="consumo" id="consumoW" min="0" placeholder="EX: 20W">
+    <!-- no fim o input de tipo number tinha setagem do valor min e max que pode receber, porém eu não tinha me atentando a isso -->
     <p>Horas de uso por dia:</p>
-    <input type="number" name="horas" id="horas" maxlength="2" placeholder="EX: 2h">
+    <input type="number" name="horas" id="horas" min="1" max="24" placeholder="EX: 2h">
     
     <p>Dias usados:</p>
-    <input type="text" name="dias" id="dias" maxlength="2" placeholder="EX: 10 Dias" >
+    <input type="number" name="dias" id="dias" min="1" max="31" placeholder="EX: 10 Dias" >
 
     <p>Preço do Kwh:</p>
-    <input type="number" name="preco" id="preco" placeholder="EX: R$0,96">
+    <input type="number" name="preco" id="preco" min="0" placeholder="EX: R$0,96">
 
     <div class="buttons">
         <button id="calcular" onclick="calculaPreco()">Calcular</button>

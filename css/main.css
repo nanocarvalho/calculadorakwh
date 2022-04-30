@@ -16,18 +16,20 @@ body {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin: 0.7rem;
 }
 
 p {
     margin: 0.5rem;
     font-size: 0.9rem;
+    max-width: 280px;
 }
 
 input {
     padding: 0.5rem;
     cursor: pointer;
+    min-width: 200px;
 }
 
 .subtitle {
